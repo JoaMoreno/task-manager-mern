@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Tasks</title>
 </head>
+
 <body>
     <div id="container" class="grid-container">
-        <div class="flex items-center header bg-gray-400">
-            <button onclick="toggler()" id="toggle-nav" class="text-xl mx-8 fas fa-bars"></button>
-            <h1>Tasks</h1>
+        <div class="flex items-center justify-between header bg-gray-400">
+            <div class="flex">
+                <button onclick="toggler()" id="toggle-nav" class="text-xl mx-8 fas fa-bars"></button>
+                <h1>Tasks</h1>
+            </div>
+            <div class="mx-8">
+                <i class="mx-2 fas fa-user"></i>
+                User
+            </div>
         </div>
 
         <div class="nav bg-gray-300">
@@ -22,31 +30,44 @@
             </div>
         </div>
 
-        <div class="main bg-gray-100">
-            <table class="w-full m-5 text-center">
-                <thead>
-                    <th>ID</th>
-                    <th>Status</th>
-                    <th>Client</th>
-                    <th>Start Date</th>
-                    <th>Release Date</th>
-                </thead>
-                <tr>
-                    <td>152</td>
-                    <td>
-                        <div class="bg-green-400 text-white">
-                            Success
-                        </div>
-                    </td>
-                    <td>Celda 2</td>
-                    <td>Celda 2</td>
-                    <td>Celda 2</td>
-                </tr>
-                </table>
+        <div class="main bg-gray-100 text-gray-800">
+            <!-- Table Titles -->
+            <div class="project py-2 font-semibold">
+                <p>id</p>
+                <p>Status</p>
+                <p>Client</p>
+                <p>Start Date</p>
+                <p>Release Date</p>
+            </div>
+            <!-- Table item -->
+            <div class="project border py-2 hover:bg-gray-300">
+                <p class="text-center">10042</p>
+                <div class="bg-green-400 text-white text-center">Success</div>
+                <p>Intel Inc.</p>
+                <p>10/01/2020</p>
+                <p>28/01/2020</p>
+            </div>
+
+            <div class="project border py-2 hover:bg-gray-300">
+                <p class="text-center">10043</p>
+                <div class="bg-orange-400 text-white text-center ajuste">Progress</div>
+                <p>Intel Inc.</p>
+                <p>10/01/2020</p>
+                <p>28/01/2020</p>
+            </div>
+            
+            <div class="project border py-2 hover:bg-gray-300">
+                <p class="text-center">10044</p>
+                <div class="bg-red-400 text-white text-center">Canceled</div>
+                <p>Intel Inc.</p>
+                <p>10/01/2020</p>
+                <p>28/01/2020</p>
+            </div>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/ed8d5b1761.js" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
+
 </html>
