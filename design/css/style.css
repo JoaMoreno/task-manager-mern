@@ -12,6 +12,9 @@
                         "nav main";
     transition: all .3s ease;
 }
+button{
+    outline:none;
+    }
 .header{
     grid-area: header;
 }
@@ -25,4 +28,24 @@
 }
 .ajuste{
     max-width: 200px;
+}
+
+.nav-container{
+    display: grid;
+    grid-template-columns: 90px auto;
+    overflow: hidden;
+}
+.nav p{
+    display: block;
+    min-width: 800px;
+}
+.nav i{
+    padding: 20px 35px;
+}
+.items-project p{
+    padding: 5px 0;
+    margin-left: 105px;
+}
+.items-active{
+    display: none;
 }

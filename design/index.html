@@ -24,10 +24,16 @@
         </div>
 
         <div class="nav bg-gray-300">
-            <div class="">
-                <button class="mx-8 my-4 fas fa-folder"></button>
-                <button class="mx-8 my-4 fas fa-folder"></button>
-            </div>
+            <p><i class="fas fa-folder"></i>
+                 <button class="outline-none" onclick="itemsActive()">Projects</button>
+                 <div id="itemsProjects" class="items-project items-active ">
+                     <p>Project Web</p>
+                     <p>Design Logo </p>
+                     <p>Other </p>
+                    </div>
+                </p>
+            <p href=""><i class="fas fa-tasks"></i> Tasks</p>
+            <p href=""><i class="fas fa-cog"></i> Config</p>
         </div>
 
         <div class="main bg-gray-100 text-gray-800">
@@ -40,7 +46,7 @@
                 <p>Release Date</p>
             </div>
             <!-- Table item -->
-            <div class="project border py-2 hover:bg-gray-300">
+            <div class="project border py-2 hover:bg-gray-200">
                 <p class="text-center">10042</p>
                 <div class="bg-green-400 text-white text-center">Success</div>
                 <p>Intel Inc.</p>
@@ -48,7 +54,7 @@
                 <p>28/01/2020</p>
             </div>
 
-            <div class="project border py-2 hover:bg-gray-300">
+            <div class="project border py-2 hover:bg-gray-200">
                 <p class="text-center">10043</p>
                 <div class="bg-orange-400 text-white text-center ajuste">Progress</div>
                 <p>Intel Inc.</p>
@@ -56,7 +62,7 @@
                 <p>28/01/2020</p>
             </div>
             
-            <div class="project border py-2 hover:bg-gray-300">
+            <div class="project border py-2 hover:bg-gray-200">
                 <p class="text-center">10044</p>
                 <div class="bg-red-400 text-white text-center">Canceled</div>
                 <p>Intel Inc.</p>
