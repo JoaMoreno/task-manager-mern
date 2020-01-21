@@ -19,6 +19,7 @@ button{
     grid-area: header;
 }
 .project{
+    margin: 8px 0;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     column-gap: 10px;
@@ -39,6 +40,10 @@ button{
     display: block;
     min-width: 800px;
 }
+.nav > div{
+    display: block;
+    min-width: 800px;
+}
 .nav i{
     padding: 20px 35px;
 }
@@ -48,4 +53,10 @@ button{
 }
 .items-active{
     display: none;
+}
+
+.line:hover{
+    transition: all .5s ease-out;
+    box-shadow: 5px 0 0 #a0aec0 inset,
+                300px 0 0 #cbd5e0 inset;
 }
